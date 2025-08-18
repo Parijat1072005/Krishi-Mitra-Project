@@ -1,0 +1,11 @@
+requests
+python-dotenv
+langchain 
+langchain-core 
+langchain-google-genai 
+pypdf 
+chromadb
+langchain_community
+pandas
+Flask
+twilio
