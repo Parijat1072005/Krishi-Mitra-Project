@@ -88,17 +88,40 @@ Configure Twilio: Copy the https://...ngrok-free.app URL from the ngrok terminal
 Project Structure /krishi-mitra-project
 
 documents/        # PDFs for the knowledge base are placed here
+
+
 db/               # The ChromaDB vector store is saved here
+
+
 scripts/          # Utility scripts (e.g., clean_static_data.py)
+
+
 .env              # Stores secret API keys (MUST NOT be committed to Git)
+
+
 .gitignore        # Specifies files to be ignored by Git
+
+
 agent.py          # Contains the core agent logic, tools, and LLM integration
+
+
 app.py            # The Flask web server for the SMS interface
+
+
 config.py         # Non-secret configuration variables
+
+
 create_vector_db.py # Script to build the knowledge base from PDFs
+
+
 data_fetchers.py  # Functions that fetch data from external APIs
+
+
 main.py           # The entry point for running the agent in the terminal
+
+
 requirements.txt  # Lists all Python dependencies for the project
+
 
 
 "Limitations and Future Work 🔮Known Limitation: There is a known issue with Indian mobile carriers blocking inbound SMS to international Twilio trial numbers. The recommended path forward is to implement the WhatsApp channel, which bypasses these carrier restrictions.Future Work:Full WhatsApp Integration: Pivot to WhatsApp for a richer, more reliable user experience.**Voice"
