@@ -24,22 +24,24 @@ Krishi-Mitra: An Agentic AI Advisor for Indian Agriculture Krishi-Mitra  is an i
     D -- Returns facts to Agent --> C;
     C -- Synthesizes final answer --> B;
     B -- Sends Reply Message --> A;
-Technology Stack AI & Machine Learning: LangChain, Google Gemini Pro, LangChain Google GenAI, LangChain ChromaData Handling: ChromaDB (Vector Store), Pandas, PyPDFWeb & API Interaction: Flask, Twilio, Requests, NgrokDevelopment: Python, venv, python-dotenvSetup and Installation ⚙️Follow these steps to get the project running on your local machine.1. Clone the Repository git clone https://github.com/your-username/krishi-mitra-project.git
-cd krishi-mitra-project
+Technology Stack AI & Machine Learning: LangChain, Google Gemini Pro, LangChain Google GenAI, LangChain ChromaData Handling: ChromaDB (Vector Store), Pandas, PyPDFWeb & API Interaction: Flask, Twilio, Requests, NgrokDevelopment: Python, venv, python-dotenvSetup and Installation ⚙️Follow these steps to get the project running on your local machine.1. Clone the Repository by using the command 
+>>git clone https://github.com/Parijat1072005/krishi-mitra-project.git
+>>cd krishi-mitra-project
 2. Create and Activate the Virtual Environment# Create the virtual environment
-python -m venv venv
+>>python -m venv venv
 
 # Activate it (on Windows)
 .\venv\Scripts\activate
-3. Install Dependenciespip install -r requirements.txt
-4. Configure Environment VariablesCreate a file named .env in the root of the project directory and add your API keys.# .env file
-OPENWEATHER_API_KEY="your_openweathermap_api_key"
-DATA_GOV_API_KEY="your_data.gov.in_api_key"
-GOOGLE_API_KEY="your_google_ai_studio_api_key"
+3. Install Dependencies
+>>pip install -r requirements.txt
+4. Configure Environment Variables i.e Create a file named .env in the root of the project directory and add your API keys in the .env file
+>>OPENWEATHER_API_KEY="your_openweathermap_api_key"
+>>DATA_GOV_API_KEY="your_data.gov.in_api_key"
+>>GOOGLE_API_KEY="your_google_ai_studio_api_key"
 
 # Add these if you are running in SMS mode
-TWILIO_ACCOUNT_SID="your_twilio_account_sid"
-TWilio_AUTH_TOKEN="your_twilio_auth_token"
+>>TWILIO_ACCOUNT_SID="your_twilio_account_sid"
+>>TWilio_AUTH_TOKEN="your_twilio_auth_token"
 5. Build the Knowledge BasePlace all your relevant PDF documents (government schemes, advisories, etc.) into the documents/ folder.Run the script to create the vector database. This only needs to be done once, or whenever you add new documents.python create_vector_db.py
 How to Run the Project You can run the project in two modes.A. Developer Mode (Terminal Only)This is the quickest way to test the agent's logic.Make sure your virtual environment is activated.Run the main script:python main.py
 The terminal will prompt you to "Ask your question:".B. SMS Mode (Real User Simulation)This mode allows you to interact with the agent via SMS using Twilio.Terminal 1: Start the Web Server# Make sure your venv is activated
