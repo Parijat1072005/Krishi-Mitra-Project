@@ -32,7 +32,7 @@ Technology Stack AI & Machine Learning: LangChain, Google Gemini Pro, LangChain 
 
 
 
-3. Create and Activate the Virtual Environment# Create the virtual environment
+3. Create the virtual environment
 >>python -m venv venv
 
 4. Activate it (on Windows)
