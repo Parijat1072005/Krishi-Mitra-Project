@@ -25,29 +25,61 @@ Krishi-Mitra: An Agentic AI Advisor for Indian Agriculture Krishi-Mitra  is an i
     C -- Synthesizes final answer --> B;
     B -- Sends Reply Message --> A;
 Technology Stack AI & Machine Learning: LangChain, Google Gemini Pro, LangChain Google GenAI, LangChain ChromaData Handling: ChromaDB (Vector Store), Pandas, PyPDFWeb & API Interaction: Flask, Twilio, Requests, NgrokDevelopment: Python, venv, python-dotenvSetup and Installation ⚙️Follow these steps to get the project running on your local machine.
+
+
+
 1. Clone the Repository by using the command 
 >>git clone https://github.com/Parijat1072005/krishi-mitra-project.git
+
+
+
 2. Go to the project directory
 >>cd krishi-mitra-project
+
+
+
 3. Create and Activate the Virtual Environment# Create the virtual environment
 >>python -m venv venv
 
 4. Activate it (on Windows)
 >>.\venv\Scripts\activate
+
+
+
 5. Install Dependencies
 >>pip install -r requirements.txt
+
+
+
 6. Configure Environment Variables i.e Create a file named .env in the root of the project directory and add your API keys in the .env file
 >>OPENWEATHER_API_KEY="your_openweathermap_api_key" eg. 9f1f2fc2401501bd67cdc74b2ece13e1
+
 >>DATA_GOV_API_KEY="your_data.gov.in_api_key" eg. 579b464db66ec23bdd0000019a4ac829f2bf414a688ac1d63662bda2
+
 >>GOOGLE_API_KEY="your_google_ai_studio_api_key" #please generate it of your own
+
 >>TWILIO_ACCOUNT_SID="your_twilio_account_sid" #please generate it of your own
+
 >>TWilio_AUTH_TOKEN="your_twilio_auth_token" #please generate it of your own
-7. Build the Knowledge BasePlace all your relevant PDF documents (government schemes, advisories, etc.) into the documents/ folder.Run the script to create the vector database. This only needs to be done once, or whenever you add new documents.python create_vector_db.py
-How to Run the Project You can run the project in two modes.A. Developer Mode (Terminal Only)This is the quickest way to test the agent's logic.Make sure your virtual environment is activated.Run the main script:python main.py
-The terminal will prompt you to "Ask your question:".B. SMS Mode (Real User Simulation)This mode allows you to interact with the agent via SMS using Twilio.Terminal 1: Start the Web Server# Make sure your venv is activated
-python app.py
+
+
+
+7. Build the Knowledge BasePlace all your relevant PDF documents (government schemes, advisories, etc.) into the documents folder.
+Run the script to create the vector database. This only needs to be done once, or whenever you add new documents.
+>>python create_vector_db.py
+
+
+8.How to Run the Project You can run the project in two modes.
+A. Developer Mode (Terminal Only)This is the quickest way to test the agent's logic.Make sure your virtual environment is activated.Run the main script:
+>>python main.py
+The terminal will prompt you to "Ask your question:".
+
+
+B. SMS Mode (Real User Simulation)This mode allows you to interact with the agent via SMS using Twilio.
+Terminal 1: Start the Web Server# Make sure your venv is activated
+>>python app.py
 Terminal 2: Start Ngrok# This creates a public URL to your local server
-ngrok http 5000
+>>ngrok http 5000
 Configure Twilio: Copy the https://...ngrok-free.app URL from the ngrok terminal and paste it into your Twilio phone number's webhook configuration for incoming messages.Interact: Send an SMS from your verified phone number to your Twilio number.Project Structure /krishi-mitra-project
 |
 |-- documents/        # PDFs for the knowledge base are placed here
