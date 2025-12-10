@@ -1,18 +1,12 @@
-Krishi-Mitra: An Agentic AI Advisor for Indian Agriculture Krishi-Mitra  is an intelligent, conversational AI agent designed to bridge the critical information gap for farmers in India. It acts as a single, reliable point of contact that farmers can consult using simple, natural language to get synthesized insights on weather, real-time market prices, crop advisories, and government schemes.This project leverages a sophisticated agentic AI architecture that is accessible via low-tech channels like SMS, ensuring that even farmers with low digital literacy or intermittent internet can access the data they need to make informed decisions.Key Features Conversational Interface: Understands natural, colloquial, and mixed-language (Hinglish) queries.Multi-Domain Synthesis: Can answer complex questions by combining information from multiple sources in a single response.Tool-Using Agent: Dynamically uses a suite of tools to fetch live data from external APIs (weather, market prices).Grounded in Knowledge: Uses a Retrieval-Augmented Generation (RAG) model with a vector database to answer questions based on a curated knowledge base of official PDF documents.Accessible via SMS: Designed with an SMS-first approach using Twilio to be accessible to the widest possible audience.Architecture Diagram The solution is built on a modern RAG + Tool-Using Agent architecture, ensuring responses are grounded in factual, verifiable data.graph TD
-    subgraph User & Interface
-        A[Farmer via SMS/WhatsApp]
-    end
+Krishi-Mitra: An Agentic AI Advisor for Indian Agriculture Krishi-Mitra  is an intelligent, conversational AI agent designed to bridge the critical information gap for farmers in India. It acts as a single, reliable point of contact that farmers can consult using simple, natural language to get synthesized insights on weather, real-time market prices, crop advisories, and government schemes.This project leverages a sophisticated agentic AI architecture that is accessible via low-tech channels like SMS, ensuring that even farmers with low digital literacy or intermittent internet can access the data they need to make informed decisions.Key Features Conversational Interface: Understands natural, colloquial, and mixed-language (Hinglish) queries.Multi-Domain Synthesis: Can answer complex questions by combining information from multiple sources in a single response.Tool-Using Agent: Dynamically uses a suite of tools to fetch live data from external APIs (weather, market prices).Grounded in Knowledge: Uses a Retrieval-Augmented Generation (RAG) model with a vector database to answer questions based on a curated knowledge base of official PDF documents.Accessible via SMS: Designed with an SMS-first approach using Twilio to be accessible to the widest possible audience.Architecture Diagram The solution is built on a modern RAG + Tool-Using Agent architecture, ensuring responses are grounded in factual, verifiable data.
 
-    subgraph Backend Application (Hosted Server)
+
+        A[Farmer via SMS/WhatsApp]
         B{Flask & Twilio Gateway}
         C{Agent Core (Gemini LLM + LangChain)}
         D[Tool Library]
-    end
-
-    subgraph Data & Knowledge Layer
         E[Live APIs <br> (Weather, Market Prices)]
         F[Vector Database <br> (Schemes, Advisories)]
-    end
 
     A -- Sends Message --> B;
     B -- Passes Query --> C;
