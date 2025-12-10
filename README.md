@@ -40,11 +40,9 @@ Technology Stack AI & Machine Learning: LangChain, Google Gemini Pro, LangChain 
 >>OPENWEATHER_API_KEY="your_openweathermap_api_key"
 >>DATA_GOV_API_KEY="your_data.gov.in_api_key"
 >>GOOGLE_API_KEY="your_google_ai_studio_api_key"
-
-7. Add these if you are running in SMS mode
 >>TWILIO_ACCOUNT_SID="your_twilio_account_sid"
 >>TWilio_AUTH_TOKEN="your_twilio_auth_token"
-8. Build the Knowledge BasePlace all your relevant PDF documents (government schemes, advisories, etc.) into the documents/ folder.Run the script to create the vector database. This only needs to be done once, or whenever you add new documents.python create_vector_db.py
+7. Build the Knowledge BasePlace all your relevant PDF documents (government schemes, advisories, etc.) into the documents/ folder.Run the script to create the vector database. This only needs to be done once, or whenever you add new documents.python create_vector_db.py
 How to Run the Project You can run the project in two modes.A. Developer Mode (Terminal Only)This is the quickest way to test the agent's logic.Make sure your virtual environment is activated.Run the main script:python main.py
 The terminal will prompt you to "Ask your question:".B. SMS Mode (Real User Simulation)This mode allows you to interact with the agent via SMS using Twilio.Terminal 1: Start the Web Server# Make sure your venv is activated
 python app.py
