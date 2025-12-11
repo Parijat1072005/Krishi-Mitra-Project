@@ -32,7 +32,7 @@ def main():
     loader = PyPDFDirectoryLoader(PDF_DIRECTORY)
     documents = loader.load()
     if not documents:
-        print("No documents found. Please add PDFs to the 'documents' directory.")
+        print("No documents found. Please add PDFs to the 'documents' directory and run thi cript again.")
         return
     print(f"Loaded {len(documents)} document(s).")
 
@@ -73,3 +73,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
