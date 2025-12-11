@@ -78,8 +78,11 @@ Terminal 2: Start Ngrok# This creates a public URL to your local server
 >>ngrok http 5000
 
 
-Configure Twilio: Copy the https://...ngrok-free.app URL from the ngrok terminal and paste it into your Twilio phone number's webhook configuration for incoming messages.Interact: Send an SMS from your verified phone number to your Twilio number.
-Project Structure /krishi-mitra-project
+Configure Twilio: Copy the https://...ngrok-free.app URL from the ngrok terminal and paste it into your Twilio phone number's webhook configuration for incoming messages. Interact: Send an SMS from your verified phone number to your Twilio number.
+
+
+
+Project Structure /krishi-mitra-project:
 
 documents/        # PDFs for the knowledge base are placed here
 
