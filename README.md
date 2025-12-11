@@ -82,7 +82,7 @@ Configure Twilio: Copy the https://...ngrok-free.app URL from the ngrok terminal
 
 
 
-                                                        Project Structure /krishi-mitra-project:
+                                                        krishi-mitra-project structure:
 
 documents/        # PDFs for the knowledge base are placed here
 
