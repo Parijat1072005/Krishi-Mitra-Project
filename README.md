@@ -62,7 +62,10 @@ Setup and Installation: Follow the below steps to get the project running on you
 
 
 7. Build the Knowledge BasePlace all your relevant PDF documents (government schemes, advisories, etc.) into the documents folder.
-Run the script to create the vector database. This only needs to be done once, or whenever you add new documents.
+
+
+
+8. Run the script to create the vector database. This only needs to be done once, or whenever you add new documents.
 >>python create_vector_db.py
 
 
