@@ -84,40 +84,40 @@ Configure Twilio: Copy the https://...ngrok-free.app URL from the ngrok terminal
 
                                                         krishi-mitra-project structure:
 
-documents/        # PDFs for the knowledge base are placed here
+documents/                        # PDFs for the knowledge base are placed here
 
 
-db/               # The ChromaDB vector store is saved here
+db/                               # The ChromaDB vector store is saved here
 
 
-scripts/          # Utility scripts (e.g., clean_static_data.py)
+scripts/                          # Utility scripts (e.g., clean_static_data.py)
 
 
-.env              # Stores secret API keys (MUST NOT be committed to Git)
+.env                              # Stores secret API keys (MUST NOT be committed to Git)
 
 
-.gitignore        # Specifies files to be ignored by Git
+.gitignore                        # Specifies files to be ignored by Git
 
 
-agent.py          # Contains the core agent logic, tools, and LLM integration
+agent.py                          # Contains the core agent logic, tools, and LLM integration
 
 
-app.py            # The Flask web server for the SMS interface
+app.py                            # The Flask web server for the SMS interface
 
 
-config.py         # Non-secret configuration variables
+config.py                         # Non-secret configuration variables
 
 
-create_vector_db.py # Script to build the knowledge base from PDFs
+create_vector_db.py                 # Script to build the knowledge base from PDFs
 
 
-data_fetchers.py  # Functions that fetch data from external APIs
+data_fetchers.py                  # Functions that fetch data from external APIs
 
 
-main.py           # The entry point for running the agent in the terminal
+main.py                           # The entry point for running the agent in the terminal
 
 
-requirements.txt  # Lists all Python dependencies for the project
+requirements.txt                  # Lists all Python dependencies for the project
 
 
 
