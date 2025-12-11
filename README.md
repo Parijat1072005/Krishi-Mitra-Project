@@ -118,4 +118,10 @@ requirements.txt  # Lists all Python dependencies for the project
 
 
 
-"Limitations and Future Work 🔮Known Limitation: There is a known issue with Indian mobile carriers blocking inbound SMS to international Twilio trial numbers. The recommended path forward is to implement the WhatsApp channel, which bypasses these carrier restrictions.Future Work:Full WhatsApp Integration: Pivot to WhatsApp for a richer, more reliable user experience.**Voice"
+                                                "Limitations and Future Work"
+
+
+Known Limitation: There is a known issue with Indian mobile carriers blocking inbound SMS to international Twilio trial numbers. The recommended path forward is to implement the WhatsApp channel, which bypasses these carrier restrictions.
+
+
+Future Work:Full WhatsApp Integration: Pivot to WhatsApp for a richer, more reliable user experience.**Voice"
