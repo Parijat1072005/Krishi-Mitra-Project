@@ -18,7 +18,10 @@ Krishi-Mitra: An Agentic AI Advisor for Indian Agriculture Krishi-Mitra  is an i
     D -- Returns facts to Agent --> C;
     C -- Synthesizes final answer --> B;
     B -- Sends Reply Message --> A;
-Technology Stack AI & Machine Learning: LangChain, Google Gemini Pro, LangChain Google GenAI, LangChain ChromaData Handling: ChromaDB (Vector Store), Pandas, PyPDFWeb & API Interaction: Flask, Twilio, Requests, NgrokDevelopment: Python, venv, python-dotenvSetup and Installation ⚙️Follow these steps to get the project running on your local machine.
+Technology Stack AI & Machine Learning: LangChain, Google Gemini Pro, LangChain Google GenAI, LangChain ChromaData Handling: ChromaDB (Vector Store), Pandas, PyPDFWeb & API Interaction: Flask, Twilio, Requests, NgrokDevelopment: Python, venv, python-dotenv. 
+
+
+Setup and Installation: Follow the below steps to get the project running on your local machine.
 
 
 
