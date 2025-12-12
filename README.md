@@ -61,7 +61,7 @@ Setup and Installation: Follow the below steps to get the project running on you
 
 
 
-7. Build the Knowledge BasePlace all your relevant PDF documents (government schemes, advisories, etc.) into the documents folder by just running the script to create the vector database. This only needs to be done once, or whenever you add new documents.
+7. Build the Knowledge BasePlace all your relevant PDF documents (government schemes, advisories, etc.) into the documents folder by just running the script to create the vector database. This only needs to be done once, or whenever you add new documents, if you are using free tier of google api, then just put 1 or 2 documents and keep in mind the chunk size and batch size and sleep time, but if you have paid version of google gemini, then you can add any number of pdfs and hit any number of API calls.
 >>python create_vector_db.py
 
 
