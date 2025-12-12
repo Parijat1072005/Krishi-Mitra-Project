@@ -66,8 +66,14 @@ Setup and Installation: Follow the below steps to get the project running on you
 
 
 8.How to Run the Project You can run the project in two modes.
+
+
+
 A. Developer Mode (Terminal Only)This is the quickest way to test the agent's logic.Make sure your virtual environment is activated.Run the main script:
 >>python main.py
+
+
+
 The terminal will prompt you to "Ask your question:".
 
 
